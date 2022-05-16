@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap');
+
+@keyframes bounce {
+  0%, 100%, 20%, 50%, 80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0)
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px)
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px)
+  }
+}
+
+.titleBar {
+  margin-top: 4rem;
+}
+
+.title {
+  color: #ea1eea;
+  font-family: 'Abel', sans-serif;
+  text-decoration: none;
+  float: left;
+  margin-left: 7vw;
+  font-size: 2rem;
+  font-weight: bold;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+
+  &:hover {
+    color: #25d1b8;
+    animation-name: bounce;
+    -moz-animation-name: bounce;
+  }
+}
+
+.btn {
+  font-family: 'Radio Canada', sans-serif;
+  background-color: #121212;
+  color: #FFD700;
+  border: none;
+  float: right;
+  border-radius: 5px;
+  padding: 0.7rem 1rem;
+  font-size: 1.2rem;
+  margin-left: 3vw;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #FFD700;
+    color: #121212;
+  }
+}
+
+.btn3 {
+  margin-right: 5vw;
+}
