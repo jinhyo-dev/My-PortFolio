@@ -1,21 +1,26 @@
 import React from 'react'
-import { Typewriter, useTypewriter, Cursor } from 'react-simple-typewriter'
+import { Typewriter } from '@chrisfieldsii/react-use-typewriter'
+import '@chrisfieldsii/react-use-typewriter/dist/index.css'
+import styles from '../../styles/style.module.scss'
+import classNames from "classnames/bind";
 
-const Typewtiters = () => {
+const cs = classNames.bind(styles)
+
+const Typewriters = () => {
   return (
     <>
-      <h1 style={{ paddingTop: '5rem', margin: 'auto 0', fontWeight: 'normal', color: "#fff" }}>
-        Hi I'm {' '}
-        <span style={{ color: 'red', fontWeight: 'bold' }}>
-          {/* Style will be inherited from the parent element */}
+      <h1 className={cs('typewriter')}>
+        Hello! I am Jinhyo Kim. <br/>
+        {' '}
+        <span>
           <Typewriter
-            words={['Student Developer', 'Frontend Developer', 'lll', 'Repeat!']}
-            loop={100000000000}
+            loop
             cursor
             cursorStyle='|'
-            typeSpeed={100}
-            deleteSpeed={50}
-            delaySpeed={1}
+            typeSpeed={90}
+            deleteSpeed={70}
+            delaySpeed={1500}
+            words={['Student Developer', 'Web Developer', 'ㅈㄴ 잠온다..']}
           />
         </span>
       </h1>
@@ -23,4 +28,4 @@ const Typewtiters = () => {
   )
 }
 
-export default Typewtiters
+export default Typewriters
