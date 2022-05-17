@@ -20,7 +20,7 @@ const Typewriters = () => {
             typeSpeed={90}
             deleteSpeed={70}
             delaySpeed={1500}
-            words={['Student Developer', 'Web Developer', 'ㅈㄴ 잠온다..']}
+            words={['Student Developer', 'Web Developer', 'Always Learning!']}
           />
         </span>
       </h1>

@@ -8,7 +8,7 @@ const cs = classNames.bind(styles)
 const Header = () => {
   const scrollToRef = (ref:string) => {
     const des = document.getElementById(ref)
-    scrollIntoView(des, {
+    scrollIntoView(des!, {
       scrollMode: 'if-needed',
       block: 'start',
       inline: 'nearest',
