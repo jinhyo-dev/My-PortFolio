@@ -21,13 +21,43 @@
   }
 }
 
+@keyframes tilt {
+  30% {
+    transform: scale(1.2);
+  }
+  40%, 60% {
+    transform: rotate(-20deg) scale(1.2);
+  }
+  50% {
+    transform: rotate(20deg) scale(1.2);
+  }
+  70% {
+    transform: rotate(0deg) scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes wave-animation {
+  0% { transform: rotate( 0.0deg) }
+  10% { transform: rotate(14.0deg) }
+  20% { transform: rotate(-8.0deg) }
+  30% { transform: rotate(14.0deg) }
+  40% { transform: rotate(-4.0deg) }
+  50% { transform: rotate(10.0deg) }
+  60% { transform: rotate( 0.0deg) }
+  100% { transform: rotate( 0.0deg) }
+}
+
+
 .title {
   color: #FFD700;
   font-family: 'Abel', sans-serif;
   text-decoration: none;
   float: left;
-  margin-left: 7vw;
-  font-size: 4vh;
+  margin-left: 20vw;
+  font-size: 3vh;
   font-weight: bold;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -52,8 +82,8 @@
   border: none;
   float: right;
   border-radius: 5px;
-  padding: 1vw 1.3vw;
-  font-size: 1.5vw;
+  padding: 0.8vw 1vw;
+  font-size: 1.1vw;
   margin-left: 3vw;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -65,7 +95,7 @@
 }
 
 .btn3 {
-  margin-right: 5vw;
+  margin-right: 20vw;
 }
 
 .typewriter {
@@ -89,6 +119,8 @@
 }
 
 .informationBox {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+  transition: 0.3s;
   float: right;
   border: 1px solid #fff;
   height: auto;
@@ -97,4 +129,44 @@
   width: 20rem;
   border-radius: 1rem;
   margin-right: 10vw;
+
+  div {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 1rem;
+  }
+
+  p, li, div {
+    font-weight: bold;
+  }
+}
+
+.informationBox:hover {
+  border: 1px solid #2c2f33;
+  background-color: #2c2f33;
+
+  div, p, li {
+    transition: all 0.3s ease-in-out;
+    color: #7289da;
+  }
+}
+
+.informationBox:active {
+  animation: tilt 1s ease infinite;
+}
+
+.language {
+  width: 25rem;
+
+  img {
+    margin-right: 20px;
+  }
+}
+
+.wavingHand {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
 }
