@@ -10,9 +10,12 @@ import AboutMe from '../components/AboutMe'
 const cs = classNames.bind(styles)
 
 const Desktop = () => {
+
   return (
-    <div>
-      <div className='container'>
+    <div style={{ marginLeft: '0', marginRight: '0'}}>
+      <div className='leftGap'></div>
+
+      <div className='middle'>
         <div className={cs('pages')}>
           <br/><br/>
           <Header/>
@@ -22,13 +25,10 @@ const Desktop = () => {
 
         <div className={cs('pages')} id='about'>
           <h1 className={cs('category')}>About Me</h1>
-          <img
-            src={'https://cdn3.iconfinder.com/data/icons/logos-brands-3/24/logo_brand_brands_logos_linux-256.png'}
-            alt="linux" width={100} height={100}/>
           <AboutMe/>
         </div>
 
-        <div className={cs('pages')} id='work'>
+        <div className={cs('pages', 'aboutPage')} id='work'>
           <h1 className={cs('category')}>My Project</h1>
         </div>
 
@@ -36,6 +36,8 @@ const Desktop = () => {
           <h1 className={cs('category')}>Contact</h1>
         </div>
       </div>
+
+      <div className='rightGap'></div>
     </div>
   )
 }

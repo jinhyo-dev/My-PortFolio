@@ -4551,6 +4551,11 @@ react-simple-typewriter@^3.0.1:
   resolved "https://registry.yarnpkg.com/react-simple-typewriter/-/react-simple-typewriter-3.0.1.tgz#5dc7b924a2e1a96950b5a2064f2dfbdfe1f8a60d"
   integrity sha512-z+aJugzvYPng9HoggyXNpnp7NjxtusGAb33bRaGRK2pEdirVKX4v3qrwdHqs6zdhCeLAthLGLtxgVX9oGekTLg==
 
+react-skills@^1.27.0:
+  version "1.27.0"
+  resolved "https://registry.yarnpkg.com/react-skills/-/react-skills-1.27.0.tgz#31c7aba179f0e833f9eb4e3634e9644bdd05bf17"
+  integrity sha512-kdHyAi7TaAjXU8fUyZf7BPNgGKGl2E1OHIZRMDvU344zxwj5+0Qe76YcYxAjjdD26PvmT+3uOLUfhvheLXJVzA==
+
 react-typewriter-effect@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/react-typewriter-effect/-/react-typewriter-effect-1.1.0.tgz#ab8c4e07a5d2dbc4505f2d53c324d73b8298d57b"

@@ -6,16 +6,12 @@ import Mobile from './DynamicPage/Mobile'
 import { BrowserView, MobileView } from 'react-device-detect'
 
 const Home = () => {
-    return (
-      <div>
-        <BrowserView>
-          <Desktop />
-        </BrowserView>
+  const isPC = useMediaQuery({
+    query: '(min-width: 900px)'
+  })
 
-        <MobileView>
-          <Mobile />
-        </MobileView>
-      </div>
+  return (
+      isPC ? <Desktop/> : <Mobile/>
     );
 }
 

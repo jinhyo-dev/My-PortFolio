@@ -1,49 +1,83 @@
 import React from 'react';
 import styles from '../../styles/Style_PC.module.scss'
 import classNames from "classnames/bind"
+import {Typewriter} from '@chrisfieldsii/react-use-typewriter'
 import {FaSchool, FaReact} from "react-icons/fa";
 
 const cs = classNames.bind(styles)
 
 const MyComponent = () => {
   return (
-    <div>
 
-      <div className={cs('informationBox', 'certificate')}>
-        <div>Certificate</div>
-        <ul>
-          <li>정보처리기능사</li>
-          <li>리눅스 마스터 2급</li>
-          <li>컴퓨터활용능력 2급</li>
-          <li>네트워크 관리사 2급</li>
-        </ul>
-      </div>
-
-      <div className={cs('informationBox', 'language')}>
-        <div>Learning</div>
-        <span><img src={"https://cdn0.iconfinder.com/data/icons/logos-brands-in-colors/128/react-256.png"} alt="React"
-                   width={80} height={80} style={{marginBottom: '10px', marginLeft: '10px'}}/></span>
-
-        <span><img src={"https://www.vectorlogo.zone/logos/python/python-vertical.svg"} alt="python" width={80}
-                   height={100}/></span>
-
-        <span><img src={"https://www.vectorlogo.zone/logos/java/java-vertical.svg"} alt="Typescript" width={70}
-                   height={120} style={{marginBottom: '2px'}}/></span>
-
-        <span><img src={'https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg'} alt="Typescript"
-                   width={80} height={80} style={{marginBottom: '10px'}}/></span>
-      </div>
-
-      <div className={cs('informationBox', 'aboutme')}>
-        <div>About Me</div>
-        <ul>
-          <p>Born in Gyeong-ju, 2005.02.16</p>
-          <li>경북소프트웨어고등학교 <FaSchool style={{color: '#187BCD'}}/> (2021 - )</li>
-          <li>월성중학교 <FaSchool style={{color: '#028A0F'}}/> (2018 - 2020)</li>
-        </ul>
-      </div>
-
+    <>
+    <div className={cs('aboutme')}>
+      {''}
+      <p>
+        <Typewriter
+          cursor
+          cursorStyle='.'
+          typeSpeed={30}
+          words={['Hi! My name Kim JinHyo. I am a student developer. Born in South Korea, Gyeong-ju, 2005.02.16 I am in Gyeongbuk Software HighSchool (2021 - present). \n I am Learning Next.js, Java, Python, MySQL and more.']}
+          />
+      </p>
     </div>
+      {/* <div className={cs('aboutme')}>
+        <p>
+          Hi! My name Kim JinHyo. I am a student developer. <br/>
+          Born in South Korea <img src={'https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg'}
+                                   width={25} height={18}/> , Gyeong-ju, 2005.02.16 <br/>
+          <span>I'm in Gyeongbuk Software HighSchool <FaSchool style={{color: '#187BCD'}}/> (2021 - present)</span>
+          <br/>
+          I am Learning Next.js, Java, Python, MySQL and more. <br/>
+        </p>
+      </div>
+      */}
+
+      <div className={cs('wrapper')}>
+
+        <div className={cs('skill')}>
+          <p>React.js</p>
+          <div className={cs('skill-bar', 'react')}>
+            <span className={cs('react-count')}>70%</span>
+          </div>
+        </div>
+
+        <div className={cs("skill")}>
+          <p>Python</p>
+          <div className={cs('skill-bar', 'python')}>
+            <span className={cs('python-count')}>60%</span>
+          </div>
+        </div>
+
+        <div className={cs("skill")}>
+          <p>JAVA</p>
+          <div className={cs('skill-bar', 'java')}>
+            <span className={cs('java-count')}>50%</span>
+          </div>
+        </div>
+
+        <div className={cs("skill")}>
+          <p>CPP</p>
+          <div className={cs('skill-bar', 'cpp')}>
+            <span className={cs('cpp-count')}>40%</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div>
+        <div className={cs('informationBox', 'certificate')}>
+          <div className={cs('content')}>
+            <h3>Certificate</h3>
+            <p>정보처리기능사</p>
+            <p>리눅스 마스터 2급</p>
+            <p>컴퓨터활용능력 2급</p>
+            <p>네트워크 관리사 2급</p>
+          </div>
+        </div>
+      </div>
+
+    </>
   )
 }
 
