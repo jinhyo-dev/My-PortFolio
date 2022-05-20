@@ -1,7 +1,7 @@
 import React from 'react'
 import { Typewriter } from '@chrisfieldsii/react-use-typewriter'
 import '@chrisfieldsii/react-use-typewriter/dist/index.css'
-import styles from '../../styles/Style_PC.module.scss'
+import styles from '../../styles/PcStyle.module.scss'
 import classNames from "classnames/bind";
 
 const cs = classNames.bind(styles)

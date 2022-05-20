@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../styles/Style_PC.module.scss'
+import styles from '../../styles/PcStyle.module.scss'
 import classNames from "classnames/bind"
 import {Typewriter} from '@chrisfieldsii/react-use-typewriter'
 import {FaSchool, FaReact} from "react-icons/fa";
@@ -9,32 +9,22 @@ const cs = classNames.bind(styles)
 const MyComponent = () => {
   return (
 
-    <>
-    <div className={cs('aboutme')}>
-      {''}
-      <p>
-        <Typewriter
-          cursor
-          cursorStyle='.'
-          typeSpeed={30}
-          words={['Hi! My name Kim JinHyo. I am a student developer. Born in South Korea, Gyeong-ju, 2005.02.16 I am in Gyeongbuk Software HighSchool (2021 - present). \n I am Learning Next.js, Java, Python, MySQL and more.']}
-          />
-      </p>
-    </div>
-      {/* <div className={cs('aboutme')}>
+    <div className='aboutPage'>
+      <div className={cs('aboutme')}>
+        {''}
         <p>
-          Hi! My name Kim JinHyo. I am a student developer. <br/>
-          Born in South Korea <img src={'https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg'}
-                                   width={25} height={18}/> , Gyeong-ju, 2005.02.16 <br/>
-          <span>I'm in Gyeongbuk Software HighSchool <FaSchool style={{color: '#187BCD'}}/> (2021 - present)</span>
-          <br/>
-          I am Learning Next.js, Java, Python, MySQL and more. <br/>
+          <Typewriter
+            cursor
+            cursorStyle='.'
+            typeSpeed={30}
+            words={['Hi! My name Kim JinHyo. I am a student developer. Born in South Korea 🇰🇷, Gyeong-ju, 2005.02.16 I am in Gyeongbuk Software HighSchool 🎓 (2021 - present). \n I am Learning Next.js, Java, Python, MySQL and more.']}
+          />
         </p>
       </div>
-      */}
 
-      <div className={cs('wrapper')}>
+      <div className={cs('wrapper', 'boxHover')}>
 
+        <h1>Skills 💪</h1>
         <div className={cs('skill')}>
           <p>React.js</p>
           <div className={cs('skill-bar', 'react')}>
@@ -65,19 +55,19 @@ const MyComponent = () => {
 
       </div>
 
-      <div>
-        <div className={cs('informationBox', 'certificate')}>
-          <div className={cs('content')}>
-            <h3>Certificate</h3>
-            <p>정보처리기능사</p>
-            <p>리눅스 마스터 2급</p>
-            <p>컴퓨터활용능력 2급</p>
-            <p>네트워크 관리사 2급</p>
-          </div>
+        <div className={cs('certificate', 'boxHover')}>
+          <h1>Certificate 🪪</h1>
+          <p>Certificate of Data Processing <span>정보처리기능사</span></p>
+          <p>Linux Master Level-2 <span>리눅스 마스터 2급</span></p>
+          <p>Computer Literacy Certificate Level-2 <span>컴퓨터 활용능력 2급</span></p>
+          <p>Network Manager Level-2 (written test) <span>네트워크 관리사 2급 (필기)</span></p>
         </div>
+
+      <div>
+        <h1>Awards</h1>
       </div>
 
-    </>
+    </div>
   )
 }
 

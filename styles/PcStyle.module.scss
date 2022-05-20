@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
 
 @keyframes bounce {
   0%, 100%, 20%, 50%, 80% {
@@ -137,43 +139,6 @@
   }
 }
 
-.informationBox {
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
-  text-align: center;
-  transition: 0.3s;
-  float: right;
-  border: 1px solid #fff;
-  height: auto;
-  color: #000;
-  background-color: #fff;
-  border-radius: 1rem;
-
-  div {
-    font-size: 20px;
-    margin-top: 10px;
-    margin-left: 1rem;
-  }
-
-  p, li, div {
-    font-weight: bold;
-  }
-}
-
-.informationBox:hover {
-  background-color: #fff;
-  border: 1px solid #2c2f33;
-  background-color: #2c2f33;
-
-  div, p, li {
-    transition: all 0.3s ease-in-out;
-    color: #7289da;
-  }
-}
-
-.informationBox:active {
-  animation: tilt 1s ease infinite;
-}
-
 .language {
   width: 25rem;
 
@@ -201,7 +166,7 @@
 
 .wrapper {
   margin-top: 5rem;
-  width: 40rem;
+  width: 45rem;
   font-family: 'Roboto', sans-serif;
   margin-left: auto;
   margin-right: auto;
@@ -211,6 +176,7 @@
   margin-bottom: 35px;
   position: relative;
   overflow-x: hidden;
+
   p {
     font-size: 18px;
     font-weight: 700;
@@ -302,4 +268,49 @@
   font-weight: 500;
   right: 0;
   color: #fff;
+}
+
+.wrapper {
+  h1 {
+    color: #fff;
+    font-family: 'Macondo', cursive;
+  }
+}
+
+.certificate {
+  h1 {
+    color: #fff;
+    font-family: 'Macondo', cursive;
+  }
+  p, span {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+  }
+  p {
+    font-family: 'Inconsolata', monospace;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  span {
+    font-size: 12px;
+    font-family: 'Gowun Dodum', sans-serif;
+  }
+  border: 1px solid #17191a;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  width: 45rem;
+}
+
+.boxHover {
+  h1, p, span {
+    transition: 0.3s;
+  }
+}
+
+.boxHover:hover {
+  h1, p, span {
+    color: #7289da;
+    transition: all 0.3s ease-in-out;
+  }
 }

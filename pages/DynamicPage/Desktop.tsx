@@ -1,6 +1,6 @@
 import React, {useRef} from 'react'
 import classNames from "classnames/bind"
-import styles from '../../styles/Style_PC.module.scss'
+import styles from '../../styles/PcStyle.module.scss'
 import {useRouter} from 'next/router'
 import {useMediaQuery} from "react-responsive"
 import Header from "../components/Header"
