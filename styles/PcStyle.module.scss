@@ -282,19 +282,23 @@
     color: #fff;
     font-family: 'Macondo', cursive;
   }
+
   p, span {
     color: #fff;
     font-family: 'Roboto', sans-serif;
   }
+
   p {
     font-family: 'Inconsolata', monospace;
     font-weight: bold;
     font-size: 20px;
   }
+
   span {
     font-size: 12px;
     font-family: 'Gowun Dodum', sans-serif;
   }
+
   border: 1px solid #17191a;
   margin-left: auto;
   margin-right: auto;
@@ -312,5 +316,20 @@
   h1, p, span {
     color: #7289da;
     transition: all 0.3s ease-in-out;
+  }
+}
+
+.projectBox {
+  border: 1px solid #fff;
+  background-color: #fff;
+  width: 400px;
+  height: 500px;
+
+  img {
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
   }
 }

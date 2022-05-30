@@ -6,6 +6,7 @@ import {useMediaQuery} from "react-responsive"
 import Header from "../components/Header"
 import Typewriter from "../components/Typewriter"
 import AboutMe from '../components/AboutMe'
+import MyProject from '../components/MyProject'
 
 const cs = classNames.bind(styles)
 
@@ -30,6 +31,7 @@ const Desktop = () => {
 
         <div className={cs('pages', 'aboutPage')} id='work'>
           <h1 className={cs('category')}>My Project</h1>
+          <MyProject/>
         </div>
 
         <div className={cs('pages')} id='contact'>

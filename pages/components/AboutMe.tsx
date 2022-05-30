@@ -63,10 +63,6 @@ const MyComponent = () => {
           <p>Network Manager Level-2 (written test) <span>네트워크 관리사 2급 (필기)</span></p>
         </div>
 
-      <div>
-        <h1>Awards</h1>
-      </div>
-
     </div>
   )
 }
