@@ -112,9 +112,6 @@
   }
 }
 
-.btn3 {
-}
-
 .typewriter {
   font-family: 'Quicksand', sans-serif;
   margin-top: 20rem;
@@ -319,11 +316,33 @@
   }
 }
 
+$hoverBgColor: #503bff;
+$hoverBgColor2: #8293ff;
+
 .projectBox {
+  float: left;
+  margin-right: auto;
   border: 1px solid #fff;
+  border-radius: 10px;
   background-color: #fff;
-  width: 400px;
-  height: 500px;
+  width: 350px;
+  height: 430px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  &:hover {
+    cursor: pointer;
+    background: linear-gradient(130deg, $hoverBgColor 0%, $hoverBgColor2 100%);
+    border: 1px solid $hoverBgColor;
+
+    div {
+      color: #fff;
+    }
+  }
+
+  div {
+    color: #000;
+  }
 
   img {
     display: block;
@@ -332,4 +351,19 @@
     margin-right: auto;
     width: 300px;
   }
+}
+
+.projectIntroduce {
+  text-align: center;
+}
+
+.projectBoxRight {
+  margin-left: 5rem;
+}
+
+.busGif {
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  height: 200px;
 }

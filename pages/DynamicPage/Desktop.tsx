@@ -30,7 +30,6 @@ const Desktop = () => {
         </div>
 
         <div className={cs('pages', 'aboutPage')} id='work'>
-          <h1 className={cs('category')}>My Project</h1>
           <MyProject/>
         </div>
 
