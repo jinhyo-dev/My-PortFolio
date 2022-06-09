@@ -4,6 +4,7 @@ import ScrollDown from '../components/Mobile/ScrollDown';
 import classNames from "classnames/bind";
 import style from "../../styles/mobileStyle.module.scss";
 import AboutMe from '../components/Mobile/AboutMe';
+import MyProject from '../components/Mobile/MyProject';
 
 const cs = classNames.bind(style);
 
@@ -22,7 +23,10 @@ const Mobile = () => {
             <AboutMe/>
           </div>
 
-          <div>3</div>
+          <div>
+            <MyProject/>
+          </div>
+
           <div>4</div>
         </div>
       </div>

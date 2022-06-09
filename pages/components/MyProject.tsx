@@ -23,7 +23,7 @@ const MyProject = () => {
       </a>
 
       <div className={cs('projectBox', 'projectBoxRight')}>
-        <img src={'https://cdn.discordapp.com/attachments/802070321070211073/983634425881448530/busTimeTable.gif'}
+        <img src={'https://cdn.discordapp.com/attachments/935776183688245341/984433735783039006/ezgif.com-gif-maker_3.gif '}
              alt={'busTimeTable'} className={cs('busGif')}/>
         <div className={cs('projectIntroduce')}>
           <h1>GBSW Blackboard</h1>
@@ -36,7 +36,7 @@ const MyProject = () => {
       </div>
 
       <div className={cs('projectBox', 'projectBoxLeft')}>
-        <img src={'https://cdn.discordapp.com/attachments/935776183688245341/980794042180857937/blackboard.gif'}
+        <img src={'https://cdn.discordapp.com/attachments/935776183688245341/984433735783039006/ezgif.com-gif-maker_3.gif'}
              alt={'blackboard'}/>
         <div className={cs('projectIntroduce')}>
           <h1>GBSW Blackboard</h1>
