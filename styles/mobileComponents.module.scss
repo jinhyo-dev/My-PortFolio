@@ -32,3 +32,48 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.AboutMe-title {
+  margin-top: 4rem;
+  font-family: 'Nanum Myeongjo', serif;
+  color: #fffff0;
+}
+
+.aboutMe {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 2vh;
+  width: 80vw;
+  height: 12rem;
+  display: flex;
+
+  p {
+    margin-top: 1rem;
+    font-family: 'Inconsolata', monospace;
+    font-size: 4vw;
+    color: #FFFFF0;
+  }
+}
+
+.skillbars {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 10px;
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skillbars:active {
+  width: 50vw;
+}
+
+.certificate {
+  margin-top: 4vh;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 10px;
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
