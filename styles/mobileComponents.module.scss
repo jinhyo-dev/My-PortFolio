@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+@font-face {
+  font-family: 'LeferiPoint-WhiteObliqueA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
@@ -87,16 +94,16 @@
 }
 
 .container {
-  box-shadow: rgba(25, 202, 155, 0.8) 0px 5px 15px 0px;
+  box-shadow: #CDD5E0 0px 0px 0px 4px inset, #CDD5E0 0px 0px 0px 4px;
   border-radius: 10px;
   background-color: #fff;
-  margin-top: 10vh;
+  margin-top: 3vh;
   display: flex;
   overflow: auto;
   flex: none;
   width: 70vw;
-  height: 68vh;
-  max-height: 89vh;
+  height: 66vh;
+  max-height: 88vh;
   flex-flow: row nowrap;
   scroll-snap-type: x mandatory;
 }
@@ -111,12 +118,14 @@
 }
 
 .busGif {
-  margin-top: 3vh;
+  margin-top: 1vh;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
   width: 50vw;
+  max-width: 20rem;
 }
 
 .projectTitle {
+  font-family: 'Josefin Sans', sans-serif;
   margin-top: 3vh;
   font-size: 5vw;
 }
@@ -129,6 +138,7 @@
 .gitIcon {
   filter: grayscale(100%);
   width: 6vw;
+
   &:hover {
     cursor: pointer;
     filter: grayscale(0%);
@@ -140,6 +150,7 @@
   margin-left: 5px;
   filter: grayscale(100%);
   width: 7vw;
+
   &:hover {
     cursor: pointer;
     filter: grayscale(0%);
@@ -147,8 +158,16 @@
 }
 
 .description {
+  font-family: 'LeferiPoint-WhiteObliqueA';
   margin-top: 1vh;
   height: auto;
   text-align: center;
-  font-size: clamp(12px, 3vw, 13px);
+  font-size: 2.2vw;
+}
+
+.blackboardGif {
+  margin-top: 1vh;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  width: 60vw;
+  max-width: 30rem;
 }

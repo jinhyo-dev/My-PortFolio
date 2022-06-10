@@ -1,17 +1,10 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "exclude": [
-      "node_modules"
-    ],
-    "include": [
-      "next-env.d.ts",
-      "**/*.ts",
-      "**/*.tsx"
-    ],
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
+    "outDir": "./build",
     "skipLibCheck": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
@@ -25,5 +18,5 @@
     "incremental": true
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "**/node_modules/*"]
 }

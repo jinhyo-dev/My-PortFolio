@@ -5,6 +5,7 @@ import classNames from "classnames/bind";
 import style from "../../styles/mobileStyle.module.scss";
 import AboutMe from '../components/Mobile/AboutMe';
 import MyProject from '../components/Mobile/MyProject';
+import router from 'next/router'
 
 const cs = classNames.bind(style);
 
@@ -15,6 +16,7 @@ const Mobile = () => {
         <div className={cs("container")} dir="ltr">
 
           <div>
+            <h1 className={cs('pageLogo')} onClick={() => router.push('/')}>Jinhyo.Dev</h1>
             <Typewrites/>
             <ScrollDown/>
           </div>
