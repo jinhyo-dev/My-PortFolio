@@ -21,7 +21,7 @@ const MyProject = () => {
   }
 
   return (
-    <div>
+    <div onClick={notify}>
       <h1 className={cs('AboutMe-title')}>My Project</h1>
       <div className={cs("holster")}>
         <div className={cs("container")} dir="ltr">
@@ -31,7 +31,7 @@ const MyProject = () => {
               <h1 className={cs('projectTitle')}>Uiseong Bus TimeTable</h1>
               <img
                 src={'https://cdn.discordapp.com/attachments/935776183688245341/984433735783039006/ezgif.com-gif-maker_3.gif'}
-                alt={'busTimeTable'} className={cs('busGif')} onClick={notify}/>
+                alt={'busTimeTable'} className={cs('busGif')}/>
               <div className={cs('description')}>
                 교통에 불편한 점이 많아 그 점을 보완하여<br/>
                 웹 페이지로 도리원 버스 터미널 기준<br/>
@@ -78,8 +78,7 @@ const MyProject = () => {
             </div>
           </div>
 
-          <div className={cs('contains')}>3</div>
-          <div className={cs('contains')}>4</div>
+          <div className={cs('contains')}><h1 className={cs('building')}>Building...</h1></div>
         </div>
       </div>
       <ToastContainer/>

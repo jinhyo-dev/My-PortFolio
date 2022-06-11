@@ -5,6 +5,7 @@ import classNames from "classnames/bind";
 import style from "../../styles/mobileStyle.module.scss";
 import AboutMe from '../components/Mobile/AboutMe';
 import MyProject from '../components/Mobile/MyProject';
+import Contact from '../components/Mobile/Contact';
 import router from 'next/router'
 
 const cs = classNames.bind(style);
@@ -29,7 +30,9 @@ const Mobile = () => {
             <MyProject/>
           </div>
 
-          <div>4</div>
+          <div>
+            <Contact/>
+          </div>
         </div>
       </div>
     </>
