@@ -1,10 +1,10 @@
-import React from 'react';
+import React from 'react'
+import styles from '../../../styles/PcStyle.module.scss'
 import classNames from "classnames/bind";
-import style from "../../../styles/mobileComponents.module.scss";
 import {ToastContainer, toast} from 'material-react-toastify';
 import 'material-react-toastify/dist/ReactToastify.css';
 
-const cs = classNames.bind(style);
+const cs = classNames.bind(styles)
 
 const MyProject = () => {
 
@@ -22,13 +22,12 @@ const MyProject = () => {
 
   return (
     <div onClick={notify}>
-      <h1 className={cs('AboutMe-title')}>My Project</h1>
+      <h1 className={cs('category')}>My Project</h1>
       <div className={cs("holster")}>
         <div className={cs("container")} dir="ltr">
 
           <div className={cs('contains')}>
             <div>
-              <div className={cs('swipeLeft')}>화면을 왼쪽으로 밀어주세요</div>
               <h1 className={cs('projectTitle')}>Uiseong Bus TimeTable</h1>
               <img
                 src={'https://cdn.discordapp.com/attachments/935776183688245341/984433735783039006/ezgif.com-gif-maker_3.gif'}
@@ -84,7 +83,7 @@ const MyProject = () => {
       </div>
       <ToastContainer/>
     </div>
-  );
+  )
 }
 
-export default MyProject;
+export default MyProject

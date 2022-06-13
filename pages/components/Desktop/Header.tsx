@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import styles from '../../styles/PcStyle.module.scss'
+import styles from '../../../styles/PcStyle.module.scss'
 import classNames from "classnames/bind";
 import scrollIntoView from 'scroll-into-view-if-needed'
 

@@ -106,6 +106,9 @@
   max-height: 88vh;
   flex-flow: row nowrap;
   scroll-snap-type: x mandatory;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .contains {
@@ -189,4 +192,12 @@
 
 .instagramLogo {
   width: 15rem;
+}
+
+.swipeLeft {
+  color: #fff;
+  font-size: 12px;
+  border: 1px solid #000;
+  margin-top: 1px;
+  background-color: #000;
 }

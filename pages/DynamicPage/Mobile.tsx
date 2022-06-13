@@ -33,6 +33,7 @@ const Mobile = () => {
           <div>
             <Contact/>
           </div>
+
         </div>
       </div>
     </>

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../styles/PcStyle.module.scss'
+import styles from '../../../styles/PcStyle.module.scss'
 import classNames from "classnames/bind"
 import {Typewriter} from '@chrisfieldsii/react-use-typewriter'
 import {FaSchool, FaReact} from "react-icons/fa";
@@ -10,6 +10,7 @@ const MyComponent = () => {
   return (
 
     <div className='aboutPage'>
+      <h1 className={cs('category')}>About Me</h1>
       <div className={cs('aboutme')}>
         {''}
         <p>

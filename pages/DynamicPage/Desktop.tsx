@@ -1,44 +1,37 @@
 import React, {useRef} from 'react'
 import classNames from "classnames/bind"
-import styles from '../../styles/PcStyle.module.scss'
 import {useRouter} from 'next/router'
 import {useMediaQuery} from "react-responsive"
-import Header from "../components/Header"
-import Typewriter from "../components/Typewriter"
-import AboutMe from '../components/AboutMe'
-import MyProject from '../components/MyProject'
-
-const cs = classNames.bind(styles)
+import Header from "../components/Desktop/Header"
+import Typewriter from "../components/Desktop/Typewriter"
+import AboutMe from '../components/Desktop/AboutMe'
+import MyProject from '../components/Desktop/MyProject'
+import Contact from '../components/Desktop/Contact'
 
 const Desktop = () => {
 
   return (
-    <div style={{ marginLeft: '0', marginRight: '0'}}>
-      <div className='leftGap'></div>
+    <div className='holster'>
+      <div className='container' dir="ltr">
 
-      <div className='middle'>
-        <div className={cs('pages')}>
-          <br/><br/>
+        <div>
           <Header/>
-          <br/>
           <Typewriter/>
         </div>
 
-        <div className={cs('pages')} id='about'>
-          <h1 className={cs('category')}>About Me</h1>
+        <div id='about'>
           <AboutMe/>
         </div>
 
-        <div className={cs('pages', 'aboutPage')} id='work'>
+        <div id='work'>
           <MyProject/>
         </div>
 
-        <div className={cs('pages')} id='contact'>
-          <h1 className={cs('category')}>Contact</h1>
+        <div id='contact'>
+          <Contact/>
         </div>
-      </div>
 
-      <div className='rightGap'></div>
+      </div>
     </div>
   )
 }
