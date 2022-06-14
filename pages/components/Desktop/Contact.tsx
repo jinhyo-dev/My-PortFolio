@@ -11,6 +11,8 @@ const cs = classNames.bind(styles)
 
 const Contact = () => {
   const [instagramIsHover, setInstagramIsHover] = useState<boolean>(false)
+  const [mailIsHover, setmailIsHover] = useState<boolean>(false)
+  const [githubIsHover, setgithubIsHover] = useState<boolean>(false)
 
   const pushToPage = (e: string) => {
     if (e == 'instagram') {
@@ -31,13 +33,38 @@ const Contact = () => {
       <h1 className='category'>Contact</h1>
       <h1 className={cs('click')}>Click !</h1>
       <div className={cs('hoverContainer')}>
-      {instagramIsHover && <div className={cs('hoverEvent', 'instagramHover')}>jinhyo___</div>}
+        {
+          instagramIsHover &&
+          <div className={cs('instagramHoverEvent', 'hoverBox')}>
+            <div>Instagram</div>
+            <p className={'hoverSupplement'}>jinhyo___</p>
+          </div>
+        }
+
+        {
+          mailIsHover &&
+          <div className={cs('mailHoverEvent', 'hoverBox')}>
+            <div>Mail</div>
+            <p className={'hoverSupplement'}>admin@jinhyo.dev</p>
+          </div>
+        }
+
+        {
+          githubIsHover &&
+          <div className={cs('githubHoverEvent', 'hoverBox')}>
+            <div>Github</div>
+            <p className={'hoverSupplement'}>jinhyo-dev</p>
+          </div>
+        }
+
       </div>
       <div className={cs('contactContainer')}>
         <FaInstagram className={cs('instagram', 'icon')} size={'130'} onClick={() => pushToPage('instagram')}
                      onMouseEnter={() => setInstagramIsHover(true)} onMouseLeave={() => setInstagramIsHover(false)}/>
-        <GrMail className={cs('mail', 'icon')} size={'140'} onClick={() => pushToPage('mail')}/>
-        <BsGithub className={cs('github', 'icon')} size={'115'} onClick={() => pushToPage('github')}/>
+        <GrMail className={cs('mail', 'icon')} size={'140'} onClick={() => pushToPage('mail')}
+                onMouseEnter={() => setmailIsHover(true)} onMouseLeave={() => setmailIsHover(false)}/>
+        <BsGithub className={cs('github', 'icon')} size={'115'} onClick={() => pushToPage('github')}
+                  onMouseEnter={() => setgithubIsHover(true)} onMouseLeave={() => setgithubIsHover(false)}/>
         <HiOutlineCode className={cs('code', 'icon')} size={'140'} onClick={() => pushToPage('solvedac')}/>
         <SiDiscord className={cs('discord', 'icon')} size={'150'}/>
       </div>

@@ -3,7 +3,6 @@ import classNames from "classnames/bind"
 import {useRouter} from 'next/router'
 import {useMediaQuery} from "react-responsive"
 
-const Loading = React.lazy(() => import('../components/Loading'))
 const Header = React.lazy(() => import('../components/Desktop/Header'))
 const Typewriter = React.lazy(() => import('../components/Desktop/Typewriter'))
 const AboutMe = React.lazy(() => import('../components/Desktop/AboutMe'))
@@ -14,7 +13,7 @@ const Desktop = () => {
 
   return (
     <div className='holster'>
-      <Suspense fallback={<Loading/>}>
+      <Suspense fallback={<div className="lds-dual-ring"/>}>
         <div className='container' dir="ltr">
 
           <div>
