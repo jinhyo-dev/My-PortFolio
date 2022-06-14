@@ -70,10 +70,9 @@
   width: 90vw;
   margin-left: auto;
   margin-right: auto;
-}
-
-.skillbars:active {
-  width: 50vw;
+  &:hover {
+    filter: blendTrans();
+  }
 }
 
 .certificate {
@@ -200,4 +199,57 @@
   border: 1px solid #000;
   margin-top: 1px;
   background-color: #000;
+}
+
+.contacts {
+  margin-top: 3rem;
+  height: 4.8rem;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 50%;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #7289da;
+    border: 1px solid #7289da;
+    color: #fff;
+  }
+}
+
+.instaIcon {
+  margin-left: 1.5rem;
+  float: left;
+  &:hover {
+    color: darkslateblue;
+  }
+}
+
+.instagram {
+  font-family: 'Lily Script One', cursive;
+  text-align: center;
+  color: #000;
+  font-size: 2.2rem;
+
+  div {
+    font-family: 'Fjord One', serif;
+    font-size: 1.2rem;
+  }
+}
+
+.bottomBox {
+  margin-top: 4rem;
+}
+
+.instagramBox {
+  background-color: #fffd93;
+}
+
+.insins {
+  color: #FB0189;
+  &:hover {
+    color: darkslateblue;
+  }
 }

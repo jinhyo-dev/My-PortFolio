@@ -7,6 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fjord+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
 @keyframes bounce {
   0%, 100%, 20%, 50%, 80% {
@@ -327,6 +328,8 @@ $hoverBgColor2: #8293ff;
 
 
 .holster {
+  -ms-overflow-style: none; /* IE, Edge */
+  scrollbar-width: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -335,6 +338,7 @@ $hoverBgColor2: #8293ff;
 }
 
 .container {
+  scrollbar-width: none;
   box-shadow: #CDD5E0 0px 0px 0px 4px inset, #CDD5E0 0px 0px 0px 4px;
   border-radius: 10px;
   background-color: #fff;
@@ -348,6 +352,7 @@ $hoverBgColor2: #8293ff;
   max-width: 50rem;
   scroll-snap-type: x mandatory;
   margin-bottom: -5rem;
+
   &::-webkit-scrollbar {
     display: none;
   }
@@ -423,44 +428,70 @@ $hoverBgColor2: #8293ff;
   font-size: 5rem;
 }
 
-.contacts {
-  margin-top: 3rem;
-  height: 6rem;
-  margin-left: auto;
-  margin-right: auto;
+.contactContainer {
+  margin-top: 1rem;
   border: 1px solid #fff;
-  background-color: #fff;
-  border-radius: 10px;
-  width: 60%;
-  &:hover {
-    cursor: pointer;
-    background-color: #7289da;
-    border: 1px solid #7289da;
-    color: #fff;
-  }
+  height: 20rem;
 }
 
-.instaIcon {
-  margin-left: 1.5rem;
-  float: left;
-  FaInstagram {
-    &:hover {
-      color: darkslateblue;
-    }
-  }
+.icon {
+  color: #485054;
+  margin-left: 3.4rem;
 }
 
 .instagram {
-  font-family: 'Lily Script One', cursive;
-  text-align: center;
-  color: #000;
-  font-size: 2.8rem;
-  div {
-    font-family: 'Fjord One', serif;
-    font-size: 1.5rem;
+  margin-left: 0;
+  margin-bottom: 6px;
+  &:hover {
+    color: #dd2a7b;
+    cursor: pointer;
   }
 }
 
-.bottomBox {
-  margin-top: 4rem;
+.mail {
+  &:hover {
+    cursor: pointer;
+    color: #B42E38;
+  }
+}
+
+.github {
+  margin-bottom: 12px;
+  &:hover {
+    cursor: pointer;
+    color: #000;
+  }
+}
+
+.code {
+  &:hover {
+    cursor: pointer;
+    color: #0086DA;
+  }
+}
+
+.discord {
+  &:hover {
+    cursor: pointer;
+    color: #404EED;
+  }
+}
+
+.hoverContainer {
+  margin-top: 16vh;
+  border: 1px solid #fff;
+  width: 100%;
+  height: 10rem;
+}
+
+.hoverEvent {
+  height: 3rem;
+  border: 1px solid #fff;
+}
+
+.click {
+  font-family: 'Acme', sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  color: #fff;
 }
