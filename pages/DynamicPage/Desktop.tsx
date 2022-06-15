@@ -1,7 +1,4 @@
-import React, {Suspense, useRef} from 'react'
-import classNames from "classnames/bind"
-import {useRouter} from 'next/router'
-import {useMediaQuery} from "react-responsive"
+import React, { Suspense } from 'react'
 
 const Header = React.lazy(() => import('../components/Desktop/Header'))
 const Typewriter = React.lazy(() => import('../components/Desktop/Typewriter'))

@@ -16,7 +16,7 @@ const AboutMe = () => {
             cursor
             cursorStyle='.'
             typeSpeed={30}
-            words={['Hi! My name Kim JinHyo. I am a Student-Developer. Born in South Korea 🇰🇷, Gyeong-ju, 2005.02.16 I am in Gyeongbuk Software HighSchool 🎓 (2021 - present). I am Learning Next.js,Java,Python,MySQL and more.']}
+            words={["Hi! My name Kim JinHyo. I am a Student-Developer. Born in South-Korea🇰🇷, Gyeong-ju, 2005.02.16 I'm in Gyeongbuk Software HighSchool 🎓 (2021~present). I'm Learning Next.js,Java,Python,MySQL and more."]}
           />
         </p>
       </div>

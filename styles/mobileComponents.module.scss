@@ -6,6 +6,7 @@
   font-weight: normal;
   font-style: normal;
 }
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
@@ -58,28 +59,25 @@
   p {
     margin-top: 1rem;
     font-family: 'Inconsolata', monospace;
-    font-size: 4vw;
+    font-size: 3.5vw;
     color: #FFFFF0;
   }
 }
 
 .skillbars {
-  margin-top: 3vh;
+  margin-top: 5vh;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   border-radius: 10px;
-  width: 90vw;
+  width: 80vw;
   margin-left: auto;
   margin-right: auto;
-  &:hover {
-    filter: blendTrans();
-  }
 }
 
 .certificate {
   margin-top: 3vh;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   border-radius: 10px;
-  width: 90vw;
+  width: 80vw;
   margin-left: auto;
   margin-right: auto;
 }
@@ -128,8 +126,8 @@
 
 .projectTitle {
   font-family: 'Josefin Sans', sans-serif;
-  margin-top: 3vh;
-  font-size: 5vw;
+  margin-top: 4vh;
+  font-size: 2vw;
 }
 
 .icons {
@@ -179,16 +177,6 @@
   font-size: 2.5rem;
 }
 
-.contacts {
-  margin-top: 6vh;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid #fff;
-  height: auto;
-  width: 70vw;
-  background-color: #fff;
-}
-
 .instagramLogo {
   width: 15rem;
 }
@@ -202,7 +190,7 @@
 }
 
 .contacts {
-  margin-top: 3rem;
+  margin-top: 1vh;
   height: 4.8rem;
   margin-left: auto;
   margin-right: auto;
@@ -252,4 +240,107 @@
   &:hover {
     color: darkslateblue;
   }
+}
+
+.contactContainer {
+  height: 10rem;
+}
+
+.icon {
+  color: #485054;
+  margin-left: 1rem;
+}
+
+.instagram {
+  margin-left: 0;
+  margin-bottom: 6px;
+
+  &:hover {
+    color: #dd2a7b;
+    cursor: pointer;
+  }
+}
+
+.mail {
+  margin-bottom: 2px;
+  &:hover {
+    cursor: pointer;
+    color: #B42E38;
+  }
+}
+
+.github {
+  margin-bottom: 6.5px;
+
+  &:hover {
+    cursor: pointer;
+    color: #883ec0;
+  }
+}
+
+.code {
+  &:hover {
+    cursor: pointer;
+    color: #0086DA;
+  }
+}
+
+.discord {
+  &:hover {
+    cursor: pointer;
+    color: #404EED;
+  }
+}
+
+.hoverContainer {
+  width: 100%;
+  height: 15vh;
+}
+
+.hoverBox {
+  text-align: center;
+  div {
+    color: #fff;
+    font-size: 7vw;
+  }
+  p {
+    font-size: 3vw;
+    color: #fff;
+    margin-top: -10px;
+  }
+}
+
+.instagramHoverEvent {
+  div {
+    font-family: 'Lily Script One', cursive;
+  }
+  p {
+    font-family: 'Fjord One', serif;
+  }
+}
+
+.mailHoverEvent {
+  div {
+    font-family: 'Montserrat', sans-serif;
+  }
+  p {
+    font-family: 'Fjord One', serif;
+    margin-top: 0px;
+  }
+}
+
+.click {
+  margin-top: 6vh;
+  font-family: 'Acme', sans-serif;
+  font-size: 10vw;
+  text-align: center;
+  color: #fff;
+}
+.swipeLeft {
+  margin-top: 10rem;
+  color: #fff;
+  font-size: 16px;
+  border: 1px solid #000;
+  margin-top: 1px;
+  background-color: #000;
 }
