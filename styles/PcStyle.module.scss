@@ -122,8 +122,8 @@
 
 .typewriter {
   font-family: 'Quicksand', sans-serif;
-  margin-top: 28rem;
-  font-size: 4rem;
+  margin-top: 40vh;
+  font-size: 3vw;
   color: #FF0084;
   text-align: center;
 
@@ -135,12 +135,12 @@
 .aboutme {
   margin-left: auto;
   margin-right: auto;
-  width: 50rem;
+  width: 50vw;
   color: aliceblue;
 
   p {
     font-family: 'Inconsolata', monospace;
-    font-size: 1.6rem;
+    font-size: 1.6vw;
   }
 }
 
@@ -170,7 +170,7 @@
 }
 
 .wrapper {
-  margin-top: 5rem;
+  margin-top: 5vh;
   width: 45rem;
   font-family: 'Roboto', sans-serif;
   margin-left: auto;
@@ -346,8 +346,8 @@ $hoverBgColor2: #8293ff;
   display: flex;
   overflow: auto;
   flex: none;
-  width: 70vw;
-  height: 66vh;
+  width: 70%;
+  height: 75vh;
   max-height: 88vh;
   flex-flow: row nowrap;
   max-width: 50rem;
@@ -522,4 +522,12 @@ $hoverBgColor2: #8293ff;
   font-size: 4rem;
   text-align: center;
   color: #fff;
+}
+.swipeLeft {
+  margin-top: 10rem;
+  color: #fff;
+  font-size: 16px;
+  border: 1px solid #000;
+  margin-top: 1px;
+  background-color: #000;
 }

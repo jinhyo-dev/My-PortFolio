@@ -17,7 +17,7 @@ const MyProject = () => {
       pauseOnHover: true,
       draggable: true,
       progress: undefined,
-    });
+    })
   }
 
   return (
@@ -25,9 +25,9 @@ const MyProject = () => {
       <h1 className={cs('category')}>My Project</h1>
       <div className={cs("holster")}>
         <div className={cs("container")} dir="ltr">
-
           <div className={cs('contains')}>
             <div>
+              <div className={cs('swipeLeft')}>화면을 왼쪽으로 밀거나 또는 키보드 좌우 방향키를 눌러주세요.</div>
               <h1 className={cs('projectTitle')}>Uiseong Bus TimeTable</h1>
               <img
                 src={'https://cdn.discordapp.com/attachments/935776183688245341/984433735783039006/ezgif.com-gif-maker_3.gif'}
@@ -58,7 +58,7 @@ const MyProject = () => {
               <h1 className={cs('projectTitle')}>GBSW Blackboard Web</h1>
               <img
                 src={'https://cdn.discordapp.com/attachments/935776183688245341/980794042180857937/blackboard.gif'}
-                alt={'busTimeTable'} className={cs('blackboardGif')} onClick={notify}/>
+                alt={'busTimeTable'} className={cs('blackboardGif')}/>
               <div className={cs('description')}>
                 학교의 공지사항을 공유하는 공지사항 게시판과<br/>
                 오늘의 급식 메뉴를 보여줍니다.<br/>
